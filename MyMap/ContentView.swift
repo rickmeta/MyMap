@@ -1,11 +1,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var inputText: String = ""
+    @State var dispSearchKey: String = ""
+    
     var body: some View {
         
         VStack {
             
-            MapView()
+            TextField("キーワードを入力してください",
+                      text: $inputText
+                      , onCommit:{
+                dispSearchKey = inputText
+                print("入力したキーワード" + inputText)
+            }
+            )
+                .padding()
+            
+            MapView(searchKey: dispSearchKey)
             
         }
         

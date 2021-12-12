@@ -3,7 +3,7 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     
-    var searchKey : String = "東京タワー"
+    var searchKey : String = ""
     
     func makeUIView(context: Context) -> MKMapView {
         MKMapView()
