@@ -1,10 +1,3 @@
-//
-//  MapView.swift
-//  MyMap
-//
-//  Created by 田中雄大 on 2021/12/11.
-//
-
 import SwiftUI
 import MapKit
 
